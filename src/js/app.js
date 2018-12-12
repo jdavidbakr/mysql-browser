@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import Notification from './components/Notification.vue';
+import Navbar from './components/Navbar.vue';
 
 new Vue({
     el: '#app',
-    components: { Notification }
+    components: { Navbar }
 });

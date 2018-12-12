@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html class="w-100 h-100">
     <head>
         <meta charset="UTF-8">
         <title>Hello World!</title>
+        <link rel="stylesheet" href="dist/css/app.css">
     </head>
-    <body>
-        <div id="app">
-            <notification>test</notification>
+    <body class="w-100 h-100">
+        <div id="app" class="h-100 d-flex flex-column">
+            <div class="row flex-shrink-0">
+                <div class="col-12">
+                    <navbar></navbar>
+                </div>
+            </div>
+            <div class="row flex-grow-1 flex-shrink-0">
+                <div class="col-12 bg-info d-flex">
+                    <div class="row flex-grow-1 flex-shrink-0">
+                        <div class="col-3 bg-success">
+                            Left
+                        </div>
+                        <div class="col-9 bg-danger">
+                            Right
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-shrink-0">
+                <div class="col-12 bg-warning">
+                    Footer
+                </div>
+            </div>
         </div>
-        <h1>Hello Worlds!</h1>
-        <!-- All of the Node.js APIs are available in this renderer process. -->
-        We are using Node.js <script>document.write(process.versions.node)</script>,
-        Chromium <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
-
-        <script>
-          // You can also require other files to run in this process
-          require('./renderer.js')
-        </script>
         <script type="text/javascript" src="dist/js/app.js"></script>
     </body>
 </html>

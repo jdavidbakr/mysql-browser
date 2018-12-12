@@ -15,3 +15,5 @@ electron.start();
 mix.js('src/js/app.js', 'dist/js/')
    .setPublicPath('dist');
 
+mix.sass('src/sass/app.scss', 'dist/css/')
+    .setPublicPath('dist');
