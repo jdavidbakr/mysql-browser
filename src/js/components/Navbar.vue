@@ -22,10 +22,5 @@
 
 <script>
     export default {
-        data() {
-            return {
-                body: 'I am a notifications.'
-            }
-        }
     }
 </script>

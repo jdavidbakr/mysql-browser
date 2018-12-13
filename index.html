@@ -12,14 +12,29 @@
                     <navbar></navbar>
                 </div>
             </div>
+            <div class="row flex-shrink-0">
+                <div class="col-12 mt-1 small">
+                    <ul class="nav nav-tabs px-1">
+                        <li class="nav-item" v-for="(tab, index) in tabs">
+                            <!-- TODO: Change each tab to be a component -->
+                            <a href="#" class="nav-link py-1 px-2" v-if="index != currentTab">
+                                {{ tab.label }}
+                            </a>
+                            <a href="#" class="nav-link py-1 px-2 active" v-if="index == currentTab">
+                                {{ tab.label }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="row flex-grow-1 flex-shrink-0">
-                <div class="col-12 bg-info d-flex">
+                <div class="col-12 d-flex">
                     <div class="row flex-grow-1 flex-shrink-0">
-                        <div class="col-3 bg-success">
+                        <div class="col-3">
                             Left
                         </div>
-                        <div class="col-9 bg-danger">
-                            Right
+                        <div class="col-9">
+                            <right-panel></right-panel>
                         </div>
                     </div>
                 </div>
